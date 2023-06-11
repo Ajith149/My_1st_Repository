@@ -7,27 +7,66 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        .container{
+            background-color: blueviolet;
+            border: 2px solid black;
+            width: 300px;
+            height: 450px;
+            margin: 250px;
+        }
+        .child-container-button{
+            text-align: center;
+            padding: 20px;
+            
+        }
+        .child-container p{
+            font-size: large;
+            font-style: italic;
+            font-weight: 1000;
+        }
+        .child-container input{
+            background-color: burlywood;
+            border: 2px solid black;
+
+        }
+        button{
+            border: 2px solid black;
+            background: blue;
+        
+        }
+
+    </style>
 </head>
 <body>
-    <Form>
-        <div>
-            <h1>Name</h1><br/>
+    <Form class="container">
+        <div class="child-container">
+            <p>Name</p>
             <input type="text" name="Name" placeholder="Enter your name here" /><br/>
         </div>
-        <div>
-            <h1>Email</h1><br/>
+        <div class="child-container">
+            <p>Email</p>
             <input type="email" name="email" placeholder="Enter your mail here" /><br/>
         </div>
-        <div>
-            <h1>Password</h1><br/>
+        <div class="child-container">
+            <p>Password</p>
             <input type="password" name="password" placeholder="Enter the password here" /><br/>
         </div>
-        <div>
-            <h1>Contact Number</h1><br/>
+        <div class="child-container">
+            <p>Contact Number</p>
             <input type="text" name="c-number" placeholder="Enter your number here"  maxlength="10" minlength="10" style="padding-bottom: 2px;"/><br/>
         </div>
-        <div>
-            <button type="submit" name="submit" value="submit" style="padding:2px top">sign up</button>
+        <div class="child-container">
+            <p>Gender</p>
+            <input type="radio" name="Gender" value="Male">Male
+            <input type="radio" name="Gender" value="Male">Female
+            <input type="radio" name="Gender" value="Male">Others
+        </div>
+        <div class="child-container-button">
+            <button type="submit" name="submit" value="submit" style="padding:2px top">Sign Up</button>
         </div>
     </Form>
 </body>
