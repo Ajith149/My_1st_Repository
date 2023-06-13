@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: "Montserrat", sanserif;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: transparent;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0px 40px;
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+    font-weight: bolder;
+    font-size: larger;
+    color:crimson;
+}
+
+li, a, button{
+    font-weight: 500px;
+    font-size: 16px;
+    text-decoration: none;
+    color: yellow;
+}
+
+nav ul li a{
+    transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+header > button{
+    padding: 9px 25px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease 0s;
+}
+
+header > button:hover{
+    background-color: rgba(0, 136, 169, 0.8)
+}
+
+.hero > button{
+    padding: 9px 25px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease 0s;
+}
+.hero > button:hover{
+    background-color: rgba(0, 136, 169, 0.8)
+}
+
+.wrapper{
+    background: url("./img1.jpg") no-repeat center center / cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.wrapper:before {
+    position: absolute;
+    content: "";
+    background-image:linear-gradient(to right, rgba(32,40,110,0.95), rgba(55,46, 169, 0.95), rgba(83, 49, 177, 0.90), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95));
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+    z-index: -1;
+}
+table, th, td{
+    border: 4px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 25px;
+}
+
+.content{
+    display: flex;
+    padding: 80px 10%;
+    justify-content: space-between;
+    color: black;
+}
+.content > img{
+    width: 500px;
+    height: 500px;
+
+}
+.hero p{
+    font-weight: 200;
+    line-height: 2;
+}
+.social_links{
+    padding: 20px;
+    margin-top:2px;
+}
+
+.social_links ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-social{
+    padding: 9px;
+    border: none;
+    border-radius: 50px;
+}
+.bg-facebook{
+    background-color: #4267b2;
+}
+.bg-instagram{
+    background-color: #ff0000;
+}
+.bg-youtube{
+    background-color: #c13584;
+}
+
+
+
